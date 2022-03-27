@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Sans+KR:wght@100;300;400&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+*/
+
+*{box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+body::-webkit-scrollbar{width:0;}
+
+
+
+/*실습1*/
+#ex_01{width: 1200px; height: 300px; margin: 0 auto; background-image: url(../img/ex1_bg.jpg); background-size: cover; background-position: 50% 50%; border-radius:0 40px 0 40px; position: relative; font-family: 'Noto Sans KR', sans-serif;}
+#ex_01 .txt_part{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color:#fff;}
+
+#ex_01 .txt_part h3{font-size: 26px;}
+#ex_01 .txt_part p{font-size: 16px; padding: 20px 0 40px;}
+#ex_01 .txt_part a{display: inline-block; padding: 0 30px; line-height: 46px; background-color: #00b2b2; color:#fff; border-radius:0 10px 0 10px; font-size: 18px;}
+#ex_01 .txt_part a:hover{background-color: #007272;}
+
+
+/*실습2*/
+#ex_02{}
+#ex_02 .top_bg{height: 280px; background-image: url(../img/ex2_bg.jpg); background-size: cover; background-position: 50% 50%;}
+#ex_02 .top_bg .dark{width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
+
+#ex_02 .main_cont{margin-top: -140px;}
+#ex_02 .main_cont .wrap{width: 1200px; margin: 0 auto; font-size: 0;}
+#ex_02 .main_cont .wrap .box{display: inline-block; width: calc(25% - 20px); height: 300px; background-color: #ffa; background-size: cover; background-position: 50% 50%; margin: 0 10px; border-radius:4px; border:1px solid #ddd; transition:background-image 0.5s; cursor: pointer;}
+#ex_02 .main_cont .wrap .box:nth-child(1){background-image: url(../img/jewelry_01.webp);}
+#ex_02 .main_cont .wrap .box:nth-child(1):hover{background-image: url(../img/jewelry_01_hover.webp);}
+#ex_02 .main_cont .wrap .box:nth-child(2){background-image: url(../img/jewelry_02.webp);}
+#ex_02 .main_cont .wrap .box:nth-child(2):hover{background-image: url(../img/jewelry_02_hover.webp);}
+#ex_02 .main_cont .wrap .box:nth-child(3){background-image: url(../img/jewelry_03.webp);}
+#ex_02 .main_cont .wrap .box:nth-child(3):hover{background-image: url(../img/jewelry_03_hover.webp);}
+#ex_02 .main_cont .wrap .box:nth-child(4){background-image: url(../img/jewelry_04.webp);}
+#ex_02 .main_cont .wrap .box:nth-child(4):hover{background-image: url(../img/jewelry_04_hover.webp);}
+
+
+
+/*실습3*/
+#ex_03{width: 100%; padding: 100px 0; background-color: #fde2d9; font-family: 'Noto Sans KR', sans-serif;}
+#ex_03 .wrap{width: 1600px; margin: 0 auto; padding: 0 10px;}
+#ex_03 .wrap .title{padding-bottom: 60px; text-align: center;}
+#ex_03 .wrap .title h3{font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 70px;}
+#ex_03 .wrap .title p{font-size: 16px; color:#777; padding-top: 40px; }
+
+#ex_03 .wrap .content{font-size: 0;}
+#ex_03 .wrap .content .box{display: inline-block; vertical-align: top; width: 25%; padding: 0 10px; font-size: 16px; color:#333; cursor: pointer;}
+#ex_03 .wrap .content .box .img_part{width: 100%; height: 535px; background-color: #ffa; background-size: 100%; background-position: 50% 0; transition: background-position 0.5s; position: relative;}
+#ex_03 .wrap .content .box:nth-child(1) .img_part{background-image: url(../img/ex3_model1.jpg);}
+#ex_03 .wrap .content .box:nth-child(2) .img_part{background-image: url(../img/ex3_model2.jpg);}
+#ex_03 .wrap .content .box:nth-child(3) .img_part{background-image: url(../img/ex3_model3.jpg);}
+#ex_03 .wrap .content .box:nth-child(4) .img_part{background-image: url(../img/ex3_model4.jpg);}
+
+#ex_03 .wrap .content .box:hover .img_part{background-position: 50% 100%;}
+#ex_03 .wrap .content .box .img_part:before{content:""; display: block; width: 1px; height: 40px; background-color: #000; position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); transition:transform 0.5s, opacity 0.5s;}
+#ex_03 .wrap .content .box:hover .img_part:before{transform: translateX(-50%) rotate(360deg); opacity: 0;}
+
+#ex_03 .wrap .content .box .img_part p{position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); transition: opacity 0.5s;}
+#ex_03 .wrap .content .box:hover .img_part p{opacity: 0;}
+
+#ex_03 .wrap .content .box .txt_part{ text-align: center; padding-top: 40px; }
+
+
+
+/*실습4*/
+#ex_04{padding: 100px 0; background-color: #fde2d9; font-family: 'Noto Sans KR', sans-serif;}
+#ex_04 .wrap{width: 1400px; margin: 0 auto; padding: 0 10px;}
+#ex_04 .wrap .title{padding-bottom: 60px; text-align: center;}
+#ex_04 .wrap .title h2{font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 70px;}
+#ex_04 .wrap .content{font-size: 0;}
+#ex_04 .wrap .content > div{display: inline-block; vertical-align: top; width: 50%; font-size: 14px; padding: 0 15px;}
+#ex_04 .wrap .content .left_space{}
+#ex_04 .wrap .content .left_space .left_bg{width: 100%; height: 856px; background-image: url(../img/ex4_leftBg.jpg); background-size: cover; background-position: 50% 50%; position: relative;}
+#ex_04 .wrap .content .left_space .left_bg .txt_center{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color:#fff; text-align: center;}
+#ex_04 .wrap .content .left_space .left_bg .txt_center h3{font-size: 50px; font-family: 'Cormorant Garamond', serif; font-weight: 300;}
+#ex_04 .wrap .content .left_space .left_bg .txt_center p{font-size: 14px; padding: 20px 0 40px;}
+#ex_04 .wrap .content .left_space .left_bg .txt_center a{font-size: 16px; color:#fff; font-weight: 200; border-bottom: 1px solid #fff; }
+
+
+#ex_04 .wrap .content .right_space{font-size: 0;}
+#ex_04 .wrap .content .right_space .itemBox{display: inline-block; vertical-align: top; width: 50%; font-size: 14px; padding: 0 10px 20px; cursor: pointer;}
+#ex_04 .wrap .content .right_space .itemBox .pd_img{}
+#ex_04 .wrap .content .right_space .itemBox .pd_img img{width: 100%;}
+
+#ex_04 .wrap .content .right_space .itemBox .pd_txt{padding-top: 10px;}
+#ex_04 .wrap .content .right_space .itemBox .pd_txt .item{}
+#ex_04 .wrap .content .right_space .itemBox .pd_txt .item li{display: inline-block; text-transform: uppercase; margin-right: 10px;}
+#ex_04 .wrap .content .right_space .itemBox .pd_txt .item li p{border-right: 1px solid #08f; font-size: 13px; line-height:1 ;padding-right: 10px; color:#08f}
+#ex_04 .wrap .content .right_space .itemBox .pd_txt .item li:last-child p{border-right:none;}
+
+#ex_04 .wrap .content .right_space .itemBox .pd_txt h4{font-size: 16px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding: 10px 0; color:#777;}
+#ex_04 .wrap .content .right_space .itemBox .pd_txt .price{font-size: 0;}
+#ex_04 .wrap .content .right_space .itemBox .pd_txt .price li{display: inline-block; font-size: 14px; padding-right: 10px; color:#777;}
+#ex_04 .wrap .content .right_space .itemBox .pd_txt .price li:first-child{color:#999; text-decoration: line-through;}
+
+
+
